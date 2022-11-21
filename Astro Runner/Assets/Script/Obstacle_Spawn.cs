@@ -24,6 +24,8 @@ public class Obstacle_Spawn : MonoBehaviour
 
     private void FixedUpdate()
     {
+        float RanY = Random.Range(-360f, 360); 
+
         if(SpawnInterval <=0)
         {
             SpawnCount = Random.Range(1, Max_spawnCount);
@@ -37,6 +39,7 @@ public class Obstacle_Spawn : MonoBehaviour
                 SpawnPosition = SpawnPoint[Position].transform.position;
                 ArrayPosition[Position] = true;
                 var obstacle = Instantiate(PrefabObstacle, SpawnPosition, Quaternion.identity);
+                //var obstacle = Instantiate(PrefabObstacle, SpawnPosition, Quaternion.EulerRotation(0f, RanY, 0f)); // for random rotation
                 obstacle.tag = "Obstacle";
             }
             for (int j = 0; j < 5; j++)

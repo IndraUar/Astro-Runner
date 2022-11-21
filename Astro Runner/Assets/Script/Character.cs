@@ -20,7 +20,7 @@ public class Character : MonoBehaviour
     }
     void FixedUpdate()
     {
-        PlayerSpeed = Input.GetAxisRaw("Horizontal")*MoveSpeed;
+        PlayerSpeed = Input.GetAxisRaw("Horizontal") * MoveSpeed;
         transform.Rotate(0, 0, RotateSpeed);
         rb.velocity = new Vector3(0, 0, PlayerSpeed);
     }

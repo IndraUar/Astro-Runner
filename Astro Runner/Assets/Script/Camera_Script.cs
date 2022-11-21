@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class Camera_Script : MonoBehaviour
 {
-    [SerializeField] Transform PlayerCharacter;
-    [SerializeField] Vector3 Offset;
+    [SerializeField] Transform Player;
+    [SerializeField] Vector3 Offset = new Vector3(0, 6.6f, -7);
+    [SerializeField] float CameraOffsetAngel = 35f;
 
     void Update()
     {
-        if(PlayerCharacter != null)
+        if (Player != null)
         {
-            transform.position = PlayerCharacter.transform.position + Offset;
-            transform.LookAt(PlayerCharacter);
+            transform.SetPositionAndRotation(Player.position + Offset, Quaternion.Euler(CameraOffsetAngel, 0, 0));
         }
     }
 }
