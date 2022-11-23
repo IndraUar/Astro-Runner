@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.2040183, g: 0.1968076, b: 0.61909616, a: 1}
+  m_IndirectSpecularColor: {r: 0.2042034, g: 0.19673014, b: 0.6188632, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -6176,6 +6176,7 @@ GameObject:
   - component: {fileID: 301612763}
   - component: {fileID: 301612764}
   - component: {fileID: 301612765}
+  - component: {fileID: 301612766}
   m_Layer: 0
   m_Name: SpawnManager
   m_TagString: Untagged
@@ -6253,6 +6254,28 @@ MonoBehaviour:
   Max_spawnCount: 3
   Max_Spawn_Interval_Time: 2
   Min_Spawn_Interval_Time: 1
+--- !u!114 &301612766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 301612761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cf5e77b7e707c84c941d8ce700ac000, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PrefabAlien: {fileID: 4334837151265771239, guid: cf1379452b3adc34d88dec40e05d2e61, type: 3}
+  SpawnPoint:
+  - {fileID: 1446907674}
+  - {fileID: 2042051156}
+  - {fileID: 2099528911}
+  - {fileID: 1318092174}
+  - {fileID: 325265562}
+  Max_spawnCount: 1
+  Max_Spawn_Interval_Time: 60
+  Min_Spawn_Interval_Time: 30
 --- !u!1 &315099293
 GameObject:
   m_ObjectHideFlags: 0
@@ -34913,7 +34936,7 @@ GameObject:
   - component: {fileID: 6435083434901637556}
   m_Layer: 0
   m_Name: Player Temp
-  m_TagString: Untagged
+  m_TagString: Character
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40002,6 +40025,8 @@ MonoBehaviour:
   speedOverTime: 0
   RespawnDelay: 0.2
   LosePanel: {fileID: 2138012004}
+  score_script: {fileID: 231913584}
+  add_score: 500
 --- !u!54 &6435083434901637557
 Rigidbody:
   m_ObjectHideFlags: 0

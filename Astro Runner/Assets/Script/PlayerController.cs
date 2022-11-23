@@ -14,6 +14,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float RespawnDelay = 0.2f;
 
     [SerializeField] GameObject LosePanel;
+    [SerializeField] Score score_script;
+    [SerializeField] int add_score;
 
     void Start()
     {
@@ -58,6 +60,11 @@ public class PlayerController : MonoBehaviour
 
             // Destroy the player 
             //Destroy(gameObject, 0.05f);
+        }
+        if(collision.gameObject.CompareTag("Alien"))
+        {
+            score_script.RecordScore += add_score;
+            Destroy(collision.gameObject);
         }
     }
 }

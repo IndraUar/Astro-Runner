@@ -29,8 +29,8 @@ public class Character : MonoBehaviour
     {
         if(collision.collider.CompareTag("Obstacle"))
         {
-            Save_Score();
-            SceneManager.LoadScene(0);
+            //Save_Score();
+            //SceneManager.LoadScene(0);
         }
     }
 
@@ -39,7 +39,6 @@ public class Character : MonoBehaviour
         CurrentScore = (int)SaveScore.RecordScore;
         if(CurrentScore > MenuScript.ScoreArray[4])
         {
-            Debug.Log("Test");
             MenuScript.ScoreArray[4] = CurrentScore;
             PlayerPrefs.SetInt("Score"+4, CurrentScore);
         }
