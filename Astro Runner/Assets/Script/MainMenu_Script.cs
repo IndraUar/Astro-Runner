@@ -10,12 +10,14 @@ public class MainMenu_Script : MonoBehaviour
     public GameObject MainPanel;
     public GameObject ModePanel;
     public GameObject ShopPanel;
+    public GameObject ScoreboardPanel;
 
     void Start()
     {
         MainPanel.SetActive(true);
         ModePanel.SetActive(false);
         ShopPanel.SetActive(false);
+        ScoreboardPanel.SetActive(false);
     }
 
     public void QuitGame()
@@ -29,11 +31,20 @@ public class MainMenu_Script : MonoBehaviour
         ModePanel.SetActive(true);
         MainPanel.SetActive(false);
         ShopPanel.SetActive(false);
+        ScoreboardPanel.SetActive(false);
     }
 
     public void Shop()
     {
         ShopPanel.SetActive(true);
+        ModePanel.SetActive(false);
+        MainPanel.SetActive(false);
+        ScoreboardPanel.SetActive(false);
+    }
+    public void ScoreBoard()
+    {
+        ScoreboardPanel.SetActive(true);
+        ShopPanel.SetActive(false);
         ModePanel.SetActive(false);
         MainPanel.SetActive(false);
     }
@@ -43,6 +54,7 @@ public class MainMenu_Script : MonoBehaviour
         MainPanel.SetActive(true);
         ModePanel.SetActive(false);
         ShopPanel.SetActive(false);
+        ScoreboardPanel.SetActive(false);
     }
 
     public void BackMode()
@@ -50,6 +62,7 @@ public class MainMenu_Script : MonoBehaviour
         MainPanel.SetActive(true);
         ModePanel.SetActive(false);
         ShopPanel.SetActive(false);
+        ScoreboardPanel.SetActive(false);
     }
 
     public void ToMainMenu()
@@ -61,16 +74,19 @@ public class MainMenu_Script : MonoBehaviour
     // this are all game modes.. just making 1 for now
     public void LoadNoob()
     {
+        Time.timeScale = 1.0f;
         SceneManager.LoadScene("Level_Noob");
     }
 
     public void LoadNormal()
     {
+        Time.timeScale = 1.0f;
         SceneManager.LoadScene("Level_Normal");
     }
 
     public void LoadPro()
     {
+        Time.timeScale = 1.0f;
         SceneManager.LoadScene("Level_Pro");
     }
 }

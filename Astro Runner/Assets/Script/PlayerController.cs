@@ -13,6 +13,8 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] float RespawnDelay = 0.2f;
 
+    [SerializeField] GameObject LosePanel;
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -41,15 +43,18 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.CompareTag("Obstacle"))
         {
             print("Game Over");
+            rb.isKinematic = true;
+            Time.timeScale = 0.0f;
+            LosePanel.SetActive(true);
 
             // Change Player color when hit obstacle
             //GetComponent<MeshRenderer>().material.color = Color.grey;
 
             // Reset the level after a while
-            Invoke("ResetLevel", RespawnDelay);
+            //Invoke("ResetLevel", RespawnDelay);
 
             // Stop player from moving after hitting obstacle
-            rb.isKinematic = true;
+
 
             // Destroy the player 
             //Destroy(gameObject, 0.05f);
