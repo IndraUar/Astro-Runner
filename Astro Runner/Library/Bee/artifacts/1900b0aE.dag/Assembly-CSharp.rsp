@@ -370,6 +370,7 @@
 "Assets/Script/Camera_Script.cs"
 "Assets/Script/Character.cs"
 "Assets/Script/Destroy.cs"
+"Assets/Script/LeaderBoard.cs"
 "Assets/Script/MainMenu_Script.cs"
 "Assets/Script/Menu.cs"
 "Assets/Script/MoonRotation.cs"
