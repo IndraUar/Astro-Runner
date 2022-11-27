@@ -1934,8 +1934,8 @@ Transform:
   m_GameObject: {fileID: 6949689902614706908}
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 4, y: 0.8, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.9, y: 0.9, z: 0.9}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 3630052743084142140}
   - {fileID: 958188664333295739}
@@ -1957,12 +1957,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExplosionParticle: {fileID: 5798114124665907645, guid: fdbb3b48492636c40a71a18b7c991e10, type: 3}
   SlimeParticle: {fileID: 5798114124665907645, guid: f7c9f28b49588764eaa32fd690eb80c2, type: 3}
-  LosePanel: {fileID: 0}
   score_script: {fileID: 0}
+  LosePanel: {fileID: 0}
+  ScoreText: {fileID: 0}
+  PauseIcon: {fileID: 0}
+  LeftButton: {fileID: 0}
+  RightButton: {fileID: 0}
   forwardMoveSpeed: 9
   sideMoveSpeed: 5
   speedOverTime: 0
   RespawnDelay: 0.2
+  Alien_Score: 50
 --- !u!54 &6949689902614706850
 Rigidbody:
   m_ObjectHideFlags: 0

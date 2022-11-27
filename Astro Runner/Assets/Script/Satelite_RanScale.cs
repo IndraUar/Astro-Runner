@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// To randomly spawn the satelite with different heights
+
 public class Satelite_RanScale : MonoBehaviour
 {
     void Start()

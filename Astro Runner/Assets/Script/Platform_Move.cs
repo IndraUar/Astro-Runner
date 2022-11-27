@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// To move the platform
+
 public class Platform_Move : MonoBehaviour
 {
     [SerializeField] private float PlatformMoveSpeed;

@@ -9,7 +9,8 @@ public class Menu : MonoBehaviour
     [SerializeField] GameObject PauseMenu;
     [SerializeField] GameObject PauseButton;
     [SerializeField] GameObject LeaderBoard;
-
+    [SerializeField] GameObject LeftButton;
+    [SerializeField] GameObject RightButton;
 
     [SerializeField] int[] Score;
 
@@ -18,6 +19,7 @@ public class Menu : MonoBehaviour
     private bool isActive_LeaderBoard;
     public int[] ScoreArray;
     private int temp;
+
     private void Start()
     {
         PauseMenu.SetActive(false);
@@ -48,6 +50,8 @@ public class Menu : MonoBehaviour
         Time.timeScale = 0.0f;
         PauseMenu.SetActive(true);
         PauseButton.SetActive(false);
+        LeftButton.SetActive(false);
+        RightButton.SetActive(false);
     }
 
     public void CloseButton()
@@ -55,6 +59,8 @@ public class Menu : MonoBehaviour
         Time.timeScale = 1.0f;
         PauseMenu.SetActive(false);
         PauseButton.SetActive(true);
+        LeftButton.SetActive(true);
+        RightButton.SetActive(true);
     }
 
     public void ScoreBoard()

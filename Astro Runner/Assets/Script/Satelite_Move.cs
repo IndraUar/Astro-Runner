@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// To move the satelite
+
 public class Satelite_Move : MonoBehaviour
 {
     [SerializeField] private float ObstacleMoveSpeed;

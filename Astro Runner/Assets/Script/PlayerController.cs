@@ -3,25 +3,35 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-// We are using this script for the game
+// Main player controller that controls all the actions
+
 public class PlayerController : MonoBehaviour
 {
     [Header("Gameobjects")]
     [SerializeField] GameObject ExplosionParticle;
     [SerializeField] GameObject SlimeParticle;
-    [SerializeField] GameObject LosePanel;
     [SerializeField] Score score_script;
-    private Rigidbody rb;
-    private Animator animator;
+
+    [Header("Panels")]
+    [SerializeField] GameObject LosePanel;
+    [SerializeField] GameObject ScoreText;
+    [SerializeField] GameObject PauseIcon;
+    [SerializeField] GameObject LeftButton;
+    [SerializeField] GameObject RightButton;
 
     [Header("Stats")]
     [SerializeField] float forwardMoveSpeed = 10f;
     [SerializeField] float sideMoveSpeed = 10f;
-    [SerializeField] float speedOverTime = 0;
-
+    [SerializeField] float speedOverTime;
     [SerializeField] float RespawnDelay = 0.2f;
+    [SerializeField] float Alien_Score = 50f;
 
-    private float Alien_Score = 50f;
+    private Rigidbody rb;
+    private Animator animator;
+
+    private float x, y, z;
+
+    private Vector3 PlayerTrans;
 
     void Start()
     {
@@ -29,15 +39,33 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody>();
     }
 
+    public void MoveLeft()
+    {
+        transform.position -= new Vector3 (0f, 0f, 0.6f);
+        if(transform.position.z <= -1.3f)
+        {
+            transform.position = new Vector3(0f, 0f, -1.2f);
+        }
+    }
+
+    public void MoveRight()
+    {
+        transform.position += new Vector3(0f, 0f, 0.6f);
+        if (transform.position.z >= 1.3f)
+        {
+            transform.position = new Vector3(0f, 0f, 1.2f);
+        }
+    }
+
     void FixedUpdate()
     {
         //increase the speed overtime
-        speedOverTime += 0.15f * Time.deltaTime;
+        speedOverTime += 0.2f * Time.deltaTime;
 
-        // THis is gonna be confusing.. but im changing my script to fit with your game bcz its going sideways lol... 
-        float x = Input.GetAxis("Horizontal") * (sideMoveSpeed + speedOverTime);
-        float y = 0f;
-        float z = (forwardMoveSpeed + speedOverTime) * Time.deltaTime * 50f;
+        // I changed the movement from my(Indra) script to fit with the main game from (Choo) because its going sideways..
+        x = Input.GetAxis("Horizontal") * (sideMoveSpeed + speedOverTime);
+        y = 0f;
+        z = (forwardMoveSpeed + speedOverTime) * Time.deltaTime * 50f;
 
         rb.velocity = new Vector3(z, y, x);
     }
@@ -50,6 +78,10 @@ public class PlayerController : MonoBehaviour
     void EnableLosePanel()
     {
         LosePanel.SetActive(true);
+        PauseIcon.SetActive(false);
+        ScoreText.SetActive(false);
+        LeftButton.SetActive(false);
+        RightButton.SetActive(false);
     }
 
     void SetTimeScale()
@@ -68,7 +100,7 @@ public class PlayerController : MonoBehaviour
             rb.isKinematic = true;
             animator.SetBool("IsDead", true);
 
-            Invoke(nameof(SetTimeScale), 0.7f);
+            Invoke(nameof(SetTimeScale), 0.8f);
             Invoke(nameof(EnableLosePanel), 0.5f);
         }
 
