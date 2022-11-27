@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class Obstacle_Spawn : MonoBehaviour
 {
-    [SerializeField] GameObject PrefabObstacle;
+    [SerializeField] GameObject[] PrefabObstacle;
     [SerializeField] Transform[] SpawnPoint;
-    [SerializeField] int Max_spawnCount, Max_Spawn_Interval_Time, Min_Spawn_Interval_Time;
+    [SerializeField] int Max_spawnCount;
+    [SerializeField] float Max_Spawn_Interval_Time, Min_Spawn_Interval_Time;
 
     private Vector3 SpawnPosition;
     private int SpawnCount;
@@ -24,7 +25,9 @@ public class Obstacle_Spawn : MonoBehaviour
 
     private void FixedUpdate()
     {
-        float RanY = Random.Range(-360f, 360); 
+        float RanY = Random.Range(-360f, 360);
+
+        int ranObstacle = Random.Range(0, PrefabObstacle.Length);
 
         if(SpawnInterval <=0)
         {
@@ -33,12 +36,12 @@ public class Obstacle_Spawn : MonoBehaviour
             {
                 do
                 {
-                    Position = Random.Range(0, 5);
+                    Position = Random.Range(0, SpawnPoint.Length);
                 } while (ArrayPosition[Position] != false);
 
                 SpawnPosition = SpawnPoint[Position].transform.position;
                 ArrayPosition[Position] = true;
-                var obstacle = Instantiate(PrefabObstacle, SpawnPosition, Quaternion.identity);
+                var obstacle = Instantiate(PrefabObstacle[ranObstacle], SpawnPosition, Quaternion.identity);
                 //var obstacle = Instantiate(PrefabObstacle, SpawnPosition, Quaternion.EulerRotation(0f, RanY, 0f)); // for random rotation
                 obstacle.tag = "Obstacle";
             }

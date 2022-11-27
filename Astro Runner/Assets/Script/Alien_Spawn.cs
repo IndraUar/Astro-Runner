@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Alien_Spawn : MonoBehaviour
 {
-    [SerializeField] GameObject PrefabAlien;
+    [SerializeField] GameObject[] PrefabAlien;
     [SerializeField] Transform[] SpawnPoint;
 
     [SerializeField] int Max_spawnCount, Max_Spawn_Interval_Time, Min_Spawn_Interval_Time;
@@ -13,6 +13,7 @@ public class Alien_Spawn : MonoBehaviour
     private float SpawnInterval;
 
     private int Position;
+    private int RanAlien;
 
     void Update()
     {
@@ -20,8 +21,9 @@ public class Alien_Spawn : MonoBehaviour
         if (SpawnInterval <= 0)
         {
             Position = Random.Range(0, 5);
+            RanAlien = Random.Range(0, PrefabAlien.Length);
             SpawnPosition = SpawnPoint[Position].transform.position;
-            var obstacle = Instantiate(PrefabAlien, SpawnPosition, Quaternion.identity);
+            var obstacle = Instantiate(PrefabAlien[RanAlien], SpawnPosition, Quaternion.EulerAngles(0f, 90f, 0f));
             obstacle.tag = "Alien";
             SpawnInterval = Random.Range(Min_Spawn_Interval_Time, Max_Spawn_Interval_Time + 1);
         }
