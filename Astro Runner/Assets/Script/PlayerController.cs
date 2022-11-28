@@ -31,8 +31,6 @@ public class PlayerController : MonoBehaviour
 
     private float x, y, z;
 
-    private Vector3 PlayerTrans;
-
     void Start()
     {
         animator = GetComponent<Animator>();
@@ -97,10 +95,11 @@ public class PlayerController : MonoBehaviour
             Instantiate(ExplosionParticle, transform.position, Quaternion.identity);
             Destroy(collision.gameObject);
 
-            rb.isKinematic = true;
+            rb.isKinematic = false;
+            
             animator.SetBool("IsDead", true);
 
-            Invoke(nameof(SetTimeScale), 0.8f);
+            Invoke(nameof(SetTimeScale), 0.6f);
             Invoke(nameof(EnableLosePanel), 0.5f);
         }
 

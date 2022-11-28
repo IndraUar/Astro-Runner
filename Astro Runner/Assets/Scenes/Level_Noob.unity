@@ -6223,7 +6223,7 @@ Transform:
   - {fileID: 925543682}
   m_Father: {fileID: 0}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 20, y: -90, z: 0}
+  m_LocalEulerAnglesHint: {x: 16.9, y: -90, z: 0}
 --- !u!1 &315099293
 GameObject:
   m_ObjectHideFlags: 0
@@ -18435,7 +18435,7 @@ MonoBehaviour:
   m_ScreenY: 0.5
   m_DeadZoneWidth: 0
   m_DeadZoneHeight: 0
-  m_SoftZoneWidth: 0.6
+  m_SoftZoneWidth: 0.8
   m_SoftZoneHeight: 0.8
   m_BiasX: 0
   m_BiasY: 0
