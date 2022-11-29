@@ -24,4 +24,12 @@ public class Obstacle_Move : MonoBehaviour
 
         this.transform.position = this.transform.position + new Vector3((ObstacleMoveSpeed + speedOverTime) * Time.deltaTime, 0, 0);
     }
+
+    private void OnTriggerEnter(Collider collision)
+    {
+        if (collision.CompareTag("DestroyTag"))
+        {
+            Destroy(gameObject);
+        }
+    }
 }

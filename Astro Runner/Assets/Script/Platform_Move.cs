@@ -12,4 +12,12 @@ public class Platform_Move : MonoBehaviour
     {
         this.transform.position = this.transform.position + new Vector3(PlatformMoveSpeed * Time.deltaTime, 0, 0);
     }
+
+    private void OnTriggerEnter(Collider collision)
+    {
+        if (collision.CompareTag("DestroyTag"))
+        {
+            Destroy(gameObject);
+        }
+    }
 }

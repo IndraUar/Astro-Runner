@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 3628328678993039762}
   - component: {fileID: 8635572389361496081}
   - component: {fileID: 6039187010438943791}
-  - component: {fileID: 7232107578237560184}
   m_Layer: 0
   m_Name: Rock2
   m_TagString: Obstacle
@@ -130,15 +129,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ObstacleMoveSpeed: 7
   speedOverTime: 0
---- !u!114 &7232107578237560184
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7585977574997811095}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e6851509f2e14a478995e878fd2923e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
