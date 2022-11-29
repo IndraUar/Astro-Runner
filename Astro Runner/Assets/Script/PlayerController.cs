@@ -26,10 +26,16 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float RespawnDelay = 0.2f;
     [SerializeField] float Alien_Score = 50f;
 
+    [Header("Audio")]
+    [SerializeField] AudioSource source;
+    [SerializeField] AudioClip explosionClip;
+    [SerializeField] AudioClip CoinClip;
+
     private Rigidbody rb;
     private Animator animator;
 
     private float x, y, z;
+
     [Tooltip("How long until next move when pressed")]
     [SerializeField] float movetime = 0.5f;
     private float current_time;
@@ -49,26 +55,18 @@ public class PlayerController : MonoBehaviour
 
     public void MoveLeft()
     {
-        if(transform.position.z > -1.2f)
+        if(transform.position.z > -1.19f)
         {
-            transform.position -= new Vector3 (0f, 0f, 0.6f);
+            transform.position -= new Vector3(0f, 0f, 0.6f);
         }
-        //if(transform.position.z <= -1.3f)
-        //{
-        //    transform.position = new Vector3(0f, 0f, -1.2f);
-        //}
     }
 
     public void MoveRight()
     {
-        if(transform.position.z < 1.2f)
+        if(transform.position.z < 1.19f)
         {
             transform.position += new Vector3(0f, 0f, 0.6f);
         }
-        //if (transform.position.z >= 1.3f)
-        //{
-        //    transform.position = new Vector3(0f, 0f, 1.2f);
-        //}
     }
 
     void FixedUpdate()
@@ -86,12 +84,13 @@ public class PlayerController : MonoBehaviour
         if(left.isPressedLeft == true)
         {
             current_time += Time.deltaTime;
-            if(current_time > movetime)
+            if (current_time > movetime)
             {
                 MoveLeft();
                 current_time = 0.0f;
             }
         }
+
         else if(right.isPressedRight == true)
         {
             current_time += Time.deltaTime;
@@ -105,6 +104,7 @@ public class PlayerController : MonoBehaviour
         {
             current_time = 0.0f;
         }
+
         Debug.Log(current_time);
     }
 
@@ -131,6 +131,7 @@ public class PlayerController : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Obstacle"))
         {
+            source.PlayOneShot(explosionClip, 1f);
             isCollided = true;
             print("Game Over");
             Instantiate(ExplosionParticle, transform.position, Quaternion.identity);
@@ -146,6 +147,7 @@ public class PlayerController : MonoBehaviour
 
         if(collision.gameObject.CompareTag("Alien"))
         {
+            source.PlayOneShot(CoinClip, 1f);
             Instantiate(SlimeParticle, transform.position, Quaternion.identity);
             score_script.RecordScore += Alien_Score;
             Destroy(collision.gameObject);
