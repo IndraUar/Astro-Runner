@@ -129,3 +129,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ObstacleMoveSpeed: 7
   speedOverTime: 0
+  playerController: {fileID: 6949689902614706909, guid: c7a794cbe52749a48b84a0afe9b80ed0, type: 3}

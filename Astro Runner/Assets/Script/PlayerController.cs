@@ -31,10 +31,15 @@ public class PlayerController : MonoBehaviour
 
     private float x, y, z;
 
+
+    public bool isCollided;
+
     void Start()
     {
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody>();
+
+        isCollided = false;
     }
 
     public void MoveLeft()
@@ -91,12 +96,13 @@ public class PlayerController : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Obstacle"))
         {
+            isCollided = true;
             print("Game Over");
             Instantiate(ExplosionParticle, transform.position, Quaternion.identity);
             Destroy(collision.gameObject);
 
             rb.isKinematic = false;
-            
+     
             animator.SetBool("IsDead", true);
 
             Invoke(nameof(SetTimeScale), 0.6f);
