@@ -30,9 +30,14 @@ public class PlayerController : MonoBehaviour
     private Animator animator;
 
     private float x, y, z;
+    [Tooltip("How long until next move when pressed")]
+    [SerializeField] float movetime = 0.5f;
+    private float current_time;
 
 
     public bool isCollided;
+    [SerializeField] LeftButton left;
+    [SerializeField] RightButton right;
 
     void Start()
     {
@@ -44,20 +49,26 @@ public class PlayerController : MonoBehaviour
 
     public void MoveLeft()
     {
-        transform.position -= new Vector3 (0f, 0f, 0.6f);
-        if(transform.position.z <= -1.3f)
+        if(transform.position.z > -1.2f)
         {
-            transform.position = new Vector3(0f, 0f, -1.2f);
+            transform.position -= new Vector3 (0f, 0f, 0.6f);
         }
+        //if(transform.position.z <= -1.3f)
+        //{
+        //    transform.position = new Vector3(0f, 0f, -1.2f);
+        //}
     }
 
     public void MoveRight()
     {
-        transform.position += new Vector3(0f, 0f, 0.6f);
-        if (transform.position.z >= 1.3f)
+        if(transform.position.z < 1.2f)
         {
-            transform.position = new Vector3(0f, 0f, 1.2f);
+            transform.position += new Vector3(0f, 0f, 0.6f);
         }
+        //if (transform.position.z >= 1.3f)
+        //{
+        //    transform.position = new Vector3(0f, 0f, 1.2f);
+        //}
     }
 
     void FixedUpdate()
@@ -71,6 +82,30 @@ public class PlayerController : MonoBehaviour
         z = (forwardMoveSpeed + speedOverTime) * Time.deltaTime * 50f;
 
         rb.velocity = new Vector3(z, y, x);
+
+        if(left.isPressedLeft == true)
+        {
+            current_time += Time.deltaTime;
+            if(current_time > movetime)
+            {
+                MoveLeft();
+                current_time = 0.0f;
+            }
+        }
+        else if(right.isPressedRight == true)
+        {
+            current_time += Time.deltaTime;
+            if (current_time > movetime)
+            {
+                MoveRight();
+                current_time = 0.0f;
+            }
+        }
+        else
+        {
+            current_time = 0.0f;
+        }
+        Debug.Log(current_time);
     }
 
     public void ResetLevel()

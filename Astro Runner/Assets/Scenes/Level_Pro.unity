@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 8900000, guid: 2cd85d1202a0d444796587a4631c0a39, type: 3}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.55520207, g: 0.42170748, b: 0.5017134, a: 1}
+  m_IndirectSpecularColor: {r: 0.55533046, g: 0.42169785, b: 0.50198, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -6649,7 +6649,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 739386360}
-  m_LocalRotation: {x: 0.08969044, y: -0.7013955, z: 0.08969043, w: 0.7013955}
+  m_LocalRotation: {x: 0.08969045, y: -0.7013955, z: 0.08969045, w: 0.7013955}
   m_LocalPosition: {x: 9, y: 4.8, z: 0.00000059604645}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -7163,6 +7163,18 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 6949689902614706909, guid: c7a794cbe52749a48b84a0afe9b80ed0, type: 3}
+      propertyPath: left
+      value: 
+      objectReference: {fileID: 1094191903}
+    - target: {fileID: 6949689902614706909, guid: c7a794cbe52749a48b84a0afe9b80ed0, type: 3}
+      propertyPath: right
+      value: 
+      objectReference: {fileID: 1594233781}
+    - target: {fileID: 6949689902614706909, guid: c7a794cbe52749a48b84a0afe9b80ed0, type: 3}
+      propertyPath: movetime
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949689902614706909, guid: c7a794cbe52749a48b84a0afe9b80ed0, type: 3}
       propertyPath: LosePanel
       value: 
       objectReference: {fileID: 1486672041}
@@ -7659,6 +7671,7 @@ GameObject:
   - component: {fileID: 1094191902}
   - component: {fileID: 1094191901}
   - component: {fileID: 1094191900}
+  - component: {fileID: 1094191903}
   m_Layer: 5
   m_Name: LeftButton
   m_TagString: Untagged
@@ -7780,6 +7793,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1094191898}
   m_CullTransparentMesh: 1
+--- !u!114 &1094191903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1094191898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afa8a8a7bcd403a4ba947ea35e59072f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isPressedLeft: 0
 --- !u!1001 &1108476927
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9268,6 +9294,7 @@ GameObject:
   - component: {fileID: 1594233780}
   - component: {fileID: 1594233779}
   - component: {fileID: 1594233778}
+  - component: {fileID: 1594233781}
   m_Layer: 5
   m_Name: RightButton
   m_TagString: Untagged
@@ -9389,6 +9416,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1594233776}
   m_CullTransparentMesh: 1
+--- !u!114 &1594233781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1594233776}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e13ec7e4df612c541abafb6b29b0f9ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isPressedRight: 0
 --- !u!1 &1601262592
 GameObject:
   m_ObjectHideFlags: 0

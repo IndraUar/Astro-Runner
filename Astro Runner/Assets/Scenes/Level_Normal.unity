@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.6791, g: 0.41063893, b: 0.81611806, a: 1}
+  m_IndirectSpecularColor: {r: 0.67819774, g: 0.4093931, b: 0.81540304, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5997,6 +5997,18 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 6949689902614706909, guid: c7a794cbe52749a48b84a0afe9b80ed0, type: 3}
+      propertyPath: left
+      value: 
+      objectReference: {fileID: 244546721}
+    - target: {fileID: 6949689902614706909, guid: c7a794cbe52749a48b84a0afe9b80ed0, type: 3}
+      propertyPath: right
+      value: 
+      objectReference: {fileID: 1552463472}
+    - target: {fileID: 6949689902614706909, guid: c7a794cbe52749a48b84a0afe9b80ed0, type: 3}
+      propertyPath: movetime
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949689902614706909, guid: c7a794cbe52749a48b84a0afe9b80ed0, type: 3}
       propertyPath: LosePanel
       value: 
       objectReference: {fileID: 633702863}
@@ -6966,6 +6978,7 @@ GameObject:
   - component: {fileID: 244546720}
   - component: {fileID: 244546719}
   - component: {fileID: 244546718}
+  - component: {fileID: 244546721}
   m_Layer: 5
   m_Name: LeftButton
   m_TagString: Untagged
@@ -7087,6 +7100,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 244546716}
   m_CullTransparentMesh: 1
+--- !u!114 &244546721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 244546716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afa8a8a7bcd403a4ba947ea35e59072f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isPressedLeft: 0
 --- !u!1 &281791089
 GameObject:
   m_ObjectHideFlags: 0
@@ -19560,6 +19586,7 @@ GameObject:
   - component: {fileID: 1552463471}
   - component: {fileID: 1552463470}
   - component: {fileID: 1552463469}
+  - component: {fileID: 1552463472}
   m_Layer: 5
   m_Name: RightButton
   m_TagString: Untagged
@@ -19681,6 +19708,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1552463467}
   m_CullTransparentMesh: 1
+--- !u!114 &1552463472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1552463467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e13ec7e4df612c541abafb6b29b0f9ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isPressedRight: 0
 --- !u!1 &1661628098
 GameObject:
   m_ObjectHideFlags: 0

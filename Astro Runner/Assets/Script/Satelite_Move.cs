@@ -25,6 +25,7 @@ public class Satelite_Move : MonoBehaviour
         if (playerController.isCollided == true)
         {
             ObstacleMoveSpeed = 0.0f;
+            speedOverTime = 0.0f;
         }
     }
 

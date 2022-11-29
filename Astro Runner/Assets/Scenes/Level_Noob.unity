@@ -19259,6 +19259,7 @@ GameObject:
   - component: {fileID: 1755355904}
   - component: {fileID: 1755355903}
   - component: {fileID: 1755355902}
+  - component: {fileID: 1755355905}
   m_Layer: 5
   m_Name: LeftButton
   m_TagString: Untagged
@@ -19380,6 +19381,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1755355900}
   m_CullTransparentMesh: 1
+--- !u!114 &1755355905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1755355900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afa8a8a7bcd403a4ba947ea35e59072f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isPressedLeft: 0
 --- !u!1 &1826694725
 GameObject:
   m_ObjectHideFlags: 0
@@ -20431,6 +20445,7 @@ GameObject:
   - component: {fileID: 2140293052}
   - component: {fileID: 2140293051}
   - component: {fileID: 2140293050}
+  - component: {fileID: 2140293053}
   m_Layer: 5
   m_Name: RightButton
   m_TagString: Untagged
@@ -20552,6 +20567,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2140293048}
   m_CullTransparentMesh: 1
+--- !u!114 &2140293053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2140293048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e13ec7e4df612c541abafb6b29b0f9ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isPressedRight: 0
 --- !u!1001 &176315778476994851
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35234,6 +35262,22 @@ PrefabInstance:
     - target: {fileID: 6949689902614706908, guid: c7a794cbe52749a48b84a0afe9b80ed0, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949689902614706909, guid: c7a794cbe52749a48b84a0afe9b80ed0, type: 3}
+      propertyPath: left
+      value: 
+      objectReference: {fileID: 1755355905}
+    - target: {fileID: 6949689902614706909, guid: c7a794cbe52749a48b84a0afe9b80ed0, type: 3}
+      propertyPath: test
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949689902614706909, guid: c7a794cbe52749a48b84a0afe9b80ed0, type: 3}
+      propertyPath: right
+      value: 
+      objectReference: {fileID: 2140293053}
+    - target: {fileID: 6949689902614706909, guid: c7a794cbe52749a48b84a0afe9b80ed0, type: 3}
+      propertyPath: movetime
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 6949689902614706909, guid: c7a794cbe52749a48b84a0afe9b80ed0, type: 3}
       propertyPath: LosePanel
