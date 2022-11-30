@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2021.3/staging' branch; Version is '2021.3.4f1 (cb45f9cae8b7) revision 13321721'; Using compiler version '192829333'; Build Type 'Release'
-OS: 'Windows 10  (10.0.19044) 64bit Core' Language: 'en' Physical Memory: 16163 MB
+OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'en' Physical Memory: 32637 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
@@ -11,13 +11,13 @@ C:\Program Files\Unity\Hub\Editor\2021.3.4f1\Editor\Unity.exe
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/cocha/Desktop/Y2S3/MGD2/Astro Runner/Astro Runner
+C:/Users/AORUS/Desktop/MGD2/Astro-Runner/Astro Runner
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-59764
-Successfully changed project path to: C:/Users/cocha/Desktop/Y2S3/MGD2/Astro Runner/Astro Runner
-C:/Users/cocha/Desktop/Y2S3/MGD2/Astro Runner/Astro Runner
+63217
+Successfully changed project path to: C:/Users/AORUS/Desktop/MGD2/Astro-Runner/Astro Runner
+C:/Users/AORUS/Desktop/MGD2/Astro-Runner/Astro Runner
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -47,113 +47,115 @@ C:/Users/cocha/Desktop/Y2S3/MGD2/Astro Runner/Astro Runner
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 79.60 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 79.36 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.4f1 (cb45f9cae8b7)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.4f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/cocha/Desktop/Y2S3/MGD2/Astro Runner/Astro Runner/Assets
+[Subsystems] Discovering subsystems at path C:/Users/AORUS/Desktop/MGD2/Astro-Runner/Astro Runner/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce RTX 3060 Laptop GPU (ID=0x2520)
+    Renderer: NVIDIA GeForce RTX 3060 Ti (ID=0x2489)
     Vendor:   NVIDIA
-    VRAM:     6009 MB
+    VRAM:     8038 MB
     Driver:   31.0.15.2698
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.4f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.4f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.4f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56356
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56576
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.4f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.4f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.4f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.4f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.005566 seconds.
+Registered in 0.005187 seconds.
 Native extension for WindowsStandalone target not found
+[usbmuxd] Start listen thread
+[usbmuxd] Listen thread started
+Native extension for iOS target not found
 Native extension for Android target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 78.79 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 83.92 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.503 seconds
+- Completed reload, in  0.549 seconds
 Domain Reload Profiling:
-	ReloadAssembly (504ms)
-		BeginReloadAssembly (53ms)
+	ReloadAssembly (550ms)
+		BeginReloadAssembly (52ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (372ms)
+			CreateAndSetChildDomain (0ms)
+		EndReloadAssembly (417ms)
 			LoadAssemblies (52ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (85ms)
+			SetupTypeCache (83ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (21ms)
-			SetupLoadedEditorAssemblies (228ms)
+			RebuildScriptCaches (20ms)
+			SetupLoadedEditorAssemblies (275ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (43ms)
+				InitializePlatformSupportModulesInManaged (50ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (79ms)
+				RefreshPlugins (84ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (72ms)
-				ProcessInitializeOnLoadMethodAttributes (33ms)
+				ProcessInitializeOnLoadAttributes (106ms)
+				ProcessInitializeOnLoadMethodAttributes (34ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.004589 seconds.
+Registered in 0.003879 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\cocha\Desktop\Y2S3\MGD2\Astro Runner\Astro Runner\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\cocha\Desktop\Y2S3\MGD2\Astro Runner\Astro Runner\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\AORUS\Desktop\MGD2\Astro-Runner\Astro Runner\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\AORUS\Desktop\MGD2\Astro-Runner\Astro Runner\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
 Native extension for Android target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 101.01 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 102.30 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.100 seconds
+- Completed reload, in  1.245 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1100ms)
-		BeginReloadAssembly (185ms)
+	ReloadAssembly (1246ms)
+		BeginReloadAssembly (201ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (123ms)
-		EndReloadAssembly (834ms)
-			LoadAssemblies (60ms)
+			CreateAndSetChildDomain (128ms)
+		EndReloadAssembly (939ms)
+			LoadAssemblies (79ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (215ms)
+			SetupTypeCache (259ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (56ms)
-			SetupLoadedEditorAssemblies (458ms)
+			RebuildScriptCaches (45ms)
+			SetupLoadedEditorAssemblies (529ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (13ms)
+				InitializePlatformSupportModulesInManaged (17ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (101ms)
-				BeforeProcessingInitializeOnLoad (102ms)
-				ProcessInitializeOnLoadAttributes (185ms)
-				ProcessInitializeOnLoadMethodAttributes (52ms)
+				RefreshPlugins (102ms)
+				BeforeProcessingInitializeOnLoad (112ms)
+				ProcessInitializeOnLoadAttributes (231ms)
+				ProcessInitializeOnLoadMethodAttributes (62ms)
 				AfterProcessingInitializeOnLoad (5ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (3ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'SimpleURPToonLitExample(With Outline)': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
 Shader 'SimpleURPToonLitExample(With Outline)': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 0.66 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.51 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4552 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 42 unused Assets / (0.5 MB). Loaded Objects now: 5038.
+Unloading 4553 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 42 unused Assets / (0.5 MB). Loaded Objects now: 5039.
 Memory consumption went from 250.8 MB to 250.3 MB.
-Total: 3.061600 ms (FindLiveObjects: 0.321900 ms CreateObjectMapping: 0.135200 ms MarkObjects: 2.446400 ms  DeleteObjects: 0.156200 ms)
+Total: 2.275900 ms (FindLiveObjects: 0.226900 ms CreateObjectMapping: 0.116100 ms MarkObjects: 1.807000 ms  DeleteObjects: 0.124700 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -167,101 +169,715 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 264119.254247 seconds.
+  Time since last request: 265359.375546 seconds.
   path: Assets/UniversalRenderPipelineGlobalSettings.asset
   artifactKey: Guid(e5949269749387f4097df6528ac27621) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UniversalRenderPipelineGlobalSettings.asset using Guid(e5949269749387f4097df6528ac27621) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88b093aecae30fa7180d72dfcd2dedc3') in 0.020420 seconds 
+Start importing Assets/UniversalRenderPipelineGlobalSettings.asset using Guid(e5949269749387f4097df6528ac27621) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c694e812eb699c2ba70284b5c41bac8') in 0.018401 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004061 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\AORUS\Desktop\MGD2\Astro-Runner\Astro Runner\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\AORUS\Desktop\MGD2\Astro-Runner\Astro Runner\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 0.48 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.860 seconds
+Domain Reload Profiling:
+	ReloadAssembly (860ms)
+		BeginReloadAssembly (97ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (29ms)
+		EndReloadAssembly (687ms)
+			LoadAssemblies (56ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (221ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (33ms)
+			SetupLoadedEditorAssemblies (342ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (22ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (64ms)
+				ProcessInitializeOnLoadAttributes (191ms)
+				ProcessInitializeOnLoadMethodAttributes (58ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+Shader 'SimpleURPToonLitExample(With Outline)': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'SimpleURPToonLitExample(With Outline)': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Refreshing native plugins compatible for Editor in 1.95 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4526 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 24 unused Assets / (0.5 MB). Loaded Objects now: 5054.
+Memory consumption went from 248.9 MB to 248.4 MB.
+Total: 2.294900 ms (FindLiveObjects: 0.253700 ms CreateObjectMapping: 0.125200 ms MarkObjects: 1.796900 ms  DeleteObjects: 0.118400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 34.417848 seconds.
-  path: Assets/Asset/Prefab/Obstacle.prefab
-  artifactKey: Guid(5dc6dcac720dafc4db838884e16f93f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asset/Prefab/Obstacle.prefab using Guid(5dc6dcac720dafc4db838884e16f93f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cdc4cc3b2dbbe7b61b12e4ad39309403') in 0.083730 seconds 
+  Time since last request: 46.312654 seconds.
+  path: Assets/Script/Alien_Spawn.cs
+  artifactKey: Guid(5cf5e77b7e707c84c941d8ce700ac000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Alien_Spawn.cs using Guid(5cf5e77b7e707c84c941d8ce700ac000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18ba75f2d8549cd40e2920b3e8e24af6') in 0.012041 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Asset/Prefab/Rock1.prefab
-  artifactKey: Guid(1d06b047a1f2d6a45ad7a04a7867c7e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asset/Prefab/Rock1.prefab using Guid(1d06b047a1f2d6a45ad7a04a7867c7e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '481fa7e0459469e9360a4d247b8b25f7') in 0.154434 seconds 
+  Time since last request: 3.634501 seconds.
+  path: Assets/Script/PlayerController.cs
+  artifactKey: Guid(0b73c5fa89c7155439171b00655cdee3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/PlayerController.cs using Guid(0b73c5fa89c7155439171b00655cdee3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7d474b5087ae9cb84f4d171de78f134') in 0.004411 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Asset/Prefab/Player.prefab
-  artifactKey: Guid(c7a794cbe52749a48b84a0afe9b80ed0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asset/Prefab/Player.prefab using Guid(c7a794cbe52749a48b84a0afe9b80ed0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36af58e26026aa3dc8ce9f46c2459662') in 0.337665 seconds 
+  Time since last request: 41.955113 seconds.
+  path: Assets/Script/PlayerController.cs
+  artifactKey: Guid(0b73c5fa89c7155439171b00655cdee3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/PlayerController.cs using Guid(0b73c5fa89c7155439171b00655cdee3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e13e20a8fdb01454d78db756561eeb3e') in 0.001651 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 2.486516 seconds.
-  path: Assets/Asset/Icon/AstroRunner Icon 2.png
-  artifactKey: Guid(67a8946b3c875f24289656da67914f45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asset/Icon/AstroRunner Icon 2.png using Guid(67a8946b3c875f24289656da67914f45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c469c195501162e1b06955927e982214') in 0.070027 seconds 
+  Time since last request: 5.995622 seconds.
+  path: Assets/Script/PlayerController.cs
+  artifactKey: Guid(0b73c5fa89c7155439171b00655cdee3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/PlayerController.cs using Guid(0b73c5fa89c7155439171b00655cdee3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01575c67841b4a0358c9d4d626cceca3') in 0.001411 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003336 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\AORUS\Desktop\MGD2\Astro-Runner\Astro Runner\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\AORUS\Desktop\MGD2\Astro-Runner\Astro Runner\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 0.46 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.803 seconds
+Domain Reload Profiling:
+	ReloadAssembly (803ms)
+		BeginReloadAssembly (99ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (28ms)
+		EndReloadAssembly (632ms)
+			LoadAssemblies (64ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (197ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (33ms)
+			SetupLoadedEditorAssemblies (310ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (22ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (65ms)
+				ProcessInitializeOnLoadAttributes (167ms)
+				ProcessInitializeOnLoadMethodAttributes (49ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+Shader 'SimpleURPToonLitExample(With Outline)': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'SimpleURPToonLitExample(With Outline)': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Refreshing native plugins compatible for Editor in 1.27 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4526 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 24 unused Assets / (0.5 MB). Loaded Objects now: 5069.
+Memory consumption went from 248.9 MB to 248.4 MB.
+Total: 2.063600 ms (FindLiveObjects: 0.198600 ms CreateObjectMapping: 0.107700 ms MarkObjects: 1.643800 ms  DeleteObjects: 0.112900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Asset/Icon/PauseButton.png
-  artifactKey: Guid(1a8ef0420727ea1458216758c2da7f0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asset/Icon/PauseButton.png using Guid(1a8ef0420727ea1458216758c2da7f0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a1adb09f4a2a8ba482922514693173e') in 0.040783 seconds 
+  Time since last request: 16.685199 seconds.
+  path: Assets/Scenes/Level_Noob.unity
+  artifactKey: Guid(3a72e2e6fc2169a4886bdf93fad92931) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Level_Noob.unity using Guid(3a72e2e6fc2169a4886bdf93fad92931) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe0a000409c9ffcf8bf39e00f53fbeb4') in 0.009324 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003290 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\AORUS\Desktop\MGD2\Astro-Runner\Astro Runner\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\AORUS\Desktop\MGD2\Astro-Runner\Astro Runner\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 0.63 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.949 seconds
+Domain Reload Profiling:
+	ReloadAssembly (949ms)
+		BeginReloadAssembly (100ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (31ms)
+		EndReloadAssembly (774ms)
+			LoadAssemblies (61ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (238ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (40ms)
+			SetupLoadedEditorAssemblies (390ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (26ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (78ms)
+				ProcessInitializeOnLoadAttributes (215ms)
+				ProcessInitializeOnLoadMethodAttributes (63ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Shader 'SimpleURPToonLitExample(With Outline)': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'SimpleURPToonLitExample(With Outline)': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Refreshing native plugins compatible for Editor in 1.63 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4526 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 24 unused Assets / (0.5 MB). Loaded Objects now: 5084.
+Memory consumption went from 248.9 MB to 248.4 MB.
+Total: 2.864800 ms (FindLiveObjects: 0.262900 ms CreateObjectMapping: 0.151700 ms MarkObjects: 2.263600 ms  DeleteObjects: 0.185800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003469 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\AORUS\Desktop\MGD2\Astro-Runner\Astro Runner\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\AORUS\Desktop\MGD2\Astro-Runner\Astro Runner\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 0.57 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.926 seconds
+Domain Reload Profiling:
+	ReloadAssembly (926ms)
+		BeginReloadAssembly (219ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (49ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (30ms)
+		EndReloadAssembly (637ms)
+			LoadAssemblies (66ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (201ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (37ms)
+			SetupLoadedEditorAssemblies (312ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (22ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (65ms)
+				ProcessInitializeOnLoadAttributes (167ms)
+				ProcessInitializeOnLoadMethodAttributes (51ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+Shader 'SimpleURPToonLitExample(With Outline)': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'SimpleURPToonLitExample(With Outline)': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Refreshing native plugins compatible for Editor in 1.59 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4526 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 24 unused Assets / (0.5 MB). Loaded Objects now: 5099.
+Memory consumption went from 249.0 MB to 248.4 MB.
+Total: 2.243100 ms (FindLiveObjects: 0.229600 ms CreateObjectMapping: 0.217400 ms MarkObjects: 1.664700 ms  DeleteObjects: 0.130400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003409 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\AORUS\Desktop\MGD2\Astro-Runner\Astro Runner\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\AORUS\Desktop\MGD2\Astro-Runner\Astro Runner\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 0.56 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.982 seconds
+Domain Reload Profiling:
+	ReloadAssembly (983ms)
+		BeginReloadAssembly (96ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (28ms)
+		EndReloadAssembly (799ms)
+			LoadAssemblies (69ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (265ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (43ms)
+			SetupLoadedEditorAssemblies (379ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (28ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (74ms)
+				ProcessInitializeOnLoadAttributes (207ms)
+				ProcessInitializeOnLoadMethodAttributes (61ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+Shader 'SimpleURPToonLitExample(With Outline)': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'SimpleURPToonLitExample(With Outline)': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Refreshing native plugins compatible for Editor in 2.26 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4526 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 24 unused Assets / (0.5 MB). Loaded Objects now: 5114.
+Memory consumption went from 248.8 MB to 248.3 MB.
+Total: 3.389000 ms (FindLiveObjects: 0.444300 ms CreateObjectMapping: 0.274600 ms MarkObjects: 2.532100 ms  DeleteObjects: 0.136300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005513 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\AORUS\Desktop\MGD2\Astro-Runner\Astro Runner\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\AORUS\Desktop\MGD2\Astro-Runner\Astro Runner\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 0.50 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.964 seconds
+Domain Reload Profiling:
+	ReloadAssembly (965ms)
+		BeginReloadAssembly (101ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (32ms)
+		EndReloadAssembly (783ms)
+			LoadAssemblies (69ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (247ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (41ms)
+			SetupLoadedEditorAssemblies (380ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (28ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (76ms)
+				ProcessInitializeOnLoadAttributes (205ms)
+				ProcessInitializeOnLoadMethodAttributes (64ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+Shader 'SimpleURPToonLitExample(With Outline)': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'SimpleURPToonLitExample(With Outline)': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Refreshing native plugins compatible for Editor in 2.12 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4526 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 24 unused Assets / (0.5 MB). Loaded Objects now: 5129.
+Memory consumption went from 249.0 MB to 248.5 MB.
+Total: 2.952100 ms (FindLiveObjects: 0.248100 ms CreateObjectMapping: 0.177100 ms MarkObjects: 2.382800 ms  DeleteObjects: 0.143000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004323 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\AORUS\Desktop\MGD2\Astro-Runner\Astro Runner\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\AORUS\Desktop\MGD2\Astro-Runner\Astro Runner\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 0.45 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.805 seconds
+Domain Reload Profiling:
+	ReloadAssembly (806ms)
+		BeginReloadAssembly (101ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (27ms)
+		EndReloadAssembly (635ms)
+			LoadAssemblies (63ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (200ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (34ms)
+			SetupLoadedEditorAssemblies (311ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (22ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (63ms)
+				ProcessInitializeOnLoadAttributes (166ms)
+				ProcessInitializeOnLoadMethodAttributes (54ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+Shader 'SimpleURPToonLitExample(With Outline)': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'SimpleURPToonLitExample(With Outline)': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Refreshing native plugins compatible for Editor in 1.24 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4526 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 24 unused Assets / (0.5 MB). Loaded Objects now: 5144.
+Memory consumption went from 249.1 MB to 248.5 MB.
+Total: 2.153000 ms (FindLiveObjects: 0.215800 ms CreateObjectMapping: 0.121600 ms MarkObjects: 1.704100 ms  DeleteObjects: 0.110700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003455 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\AORUS\Desktop\MGD2\Astro-Runner\Astro Runner\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\AORUS\Desktop\MGD2\Astro-Runner\Astro Runner\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 0.54 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.937 seconds
+Domain Reload Profiling:
+	ReloadAssembly (937ms)
+		BeginReloadAssembly (103ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (31ms)
+		EndReloadAssembly (758ms)
+			LoadAssemblies (66ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (228ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (41ms)
+			SetupLoadedEditorAssemblies (384ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (27ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (75ms)
+				ProcessInitializeOnLoadAttributes (209ms)
+				ProcessInitializeOnLoadMethodAttributes (66ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Shader 'SimpleURPToonLitExample(With Outline)': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'SimpleURPToonLitExample(With Outline)': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Refreshing native plugins compatible for Editor in 1.77 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4526 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 24 unused Assets / (0.5 MB). Loaded Objects now: 5159.
+Memory consumption went from 249.1 MB to 248.6 MB.
+Total: 2.808500 ms (FindLiveObjects: 0.257100 ms CreateObjectMapping: 0.191900 ms MarkObjects: 2.215400 ms  DeleteObjects: 0.143000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003835 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\AORUS\Desktop\MGD2\Astro-Runner\Astro Runner\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\AORUS\Desktop\MGD2\Astro-Runner\Astro Runner\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 0.56 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.965 seconds
+Domain Reload Profiling:
+	ReloadAssembly (966ms)
+		BeginReloadAssembly (98ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (28ms)
+		EndReloadAssembly (787ms)
+			LoadAssemblies (70ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (243ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (41ms)
+			SetupLoadedEditorAssemblies (389ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (29ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (79ms)
+				ProcessInitializeOnLoadAttributes (211ms)
+				ProcessInitializeOnLoadMethodAttributes (64ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+Shader 'SimpleURPToonLitExample(With Outline)': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'SimpleURPToonLitExample(With Outline)': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Refreshing native plugins compatible for Editor in 1.59 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4526 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 24 unused Assets / (0.5 MB). Loaded Objects now: 5174.
+Memory consumption went from 249.1 MB to 248.6 MB.
+Total: 2.611000 ms (FindLiveObjects: 0.273400 ms CreateObjectMapping: 0.139900 ms MarkObjects: 2.059300 ms  DeleteObjects: 0.137300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004187 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\AORUS\Desktop\MGD2\Astro-Runner\Astro Runner\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\AORUS\Desktop\MGD2\Astro-Runner\Astro Runner\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 0.58 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.813 seconds
+Domain Reload Profiling:
+	ReloadAssembly (813ms)
+		BeginReloadAssembly (99ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (28ms)
+		EndReloadAssembly (641ms)
+			LoadAssemblies (59ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (197ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (37ms)
+			SetupLoadedEditorAssemblies (314ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (26ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (64ms)
+				ProcessInitializeOnLoadAttributes (166ms)
+				ProcessInitializeOnLoadMethodAttributes (52ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+Shader 'SimpleURPToonLitExample(With Outline)': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'SimpleURPToonLitExample(With Outline)': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Refreshing native plugins compatible for Editor in 1.33 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4526 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 24 unused Assets / (0.5 MB). Loaded Objects now: 5189.
+Memory consumption went from 248.9 MB to 248.4 MB.
+Total: 2.470200 ms (FindLiveObjects: 0.238500 ms CreateObjectMapping: 0.119500 ms MarkObjects: 1.960100 ms  DeleteObjects: 0.151200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Asset/Icon/Mute.png
-  artifactKey: Guid(44c6e4d9a384a0744a57ca43b5d18632) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asset/Icon/Mute.png using Guid(44c6e4d9a384a0744a57ca43b5d18632) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f457ac566b9c2e1c5096c81d05fe124') in 0.036048 seconds 
+  Time since last request: 219.883873 seconds.
+  path: Assets/Scenes/Level_Normal.unity
+  artifactKey: Guid(0eb0c9b627404a644aa15cf9618fd7b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Level_Normal.unity using Guid(0eb0c9b627404a644aa15cf9618fd7b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9373cc863f10151c3f4eba82f31da8a8') in 0.008523 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Asset/Icon/RightButton.png
-  artifactKey: Guid(d4379eb7543eb724bbf01028df6a046c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asset/Icon/RightButton.png using Guid(d4379eb7543eb724bbf01028df6a046c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2050da4fa284eedd1a099222ffb73009') in 0.029759 seconds 
+  Time since last request: 6.402202 seconds.
+  path: Assets/Scenes/Level_Pro.unity
+  artifactKey: Guid(8ec385606c5986244af86f8b6ea232d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Level_Pro.unity using Guid(8ec385606c5986244af86f8b6ea232d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd1eb19ed0c6f4e46cd8d56181e370e8') in 0.005283 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Asset/Icon/LeftButton.png
-  artifactKey: Guid(e09f75a3b3cb0f54fb0756ae25756028) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asset/Icon/LeftButton.png using Guid(e09f75a3b3cb0f54fb0756ae25756028) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81cac0daa5776ba1cf84c48305cd7e3d') in 0.023140 seconds 
+  Time since last request: 5.959586 seconds.
+  path: Assets/Scenes/Level_Noob.unity
+  artifactKey: Guid(3a72e2e6fc2169a4886bdf93fad92931) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Level_Noob.unity using Guid(3a72e2e6fc2169a4886bdf93fad92931) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45f247071c83983ef9905f5c1975668e') in 0.001598 seconds 
 ========================================================================
-Received Import Request.
-  Time since last request: 0.574947 seconds.
-  path: Assets/Asset/Fonts/Space Garden.ttf
-  artifactKey: Guid(1890b22525916a34ab4e1fa51e422972) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asset/Fonts/Space Garden.ttf using Guid(1890b22525916a34ab4e1fa51e422972) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94d46053afcb4c349405357af85b731b') in 0.035479 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.945681 seconds.
-  path: Assets/Models/Satelite2.fbx
-  artifactKey: Guid(51c51fa09a65e8346b09b82a6d2a7fe0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Satelite2.fbx using Guid(51c51fa09a65e8346b09b82a6d2a7fe0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4187d290c58c7bc5d4c981198b178b8c') in 0.037464 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.529035 seconds.
-  path: Assets/Models/Moon/M_Moon_4Rock.mat
-  artifactKey: Guid(4c8813d7134ea2143b4e3b26f7eb4e5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Moon/M_Moon_4Rock.mat using Guid(4c8813d7134ea2143b4e3b26f7eb4e5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb5104d0baf2a978ce6bd1a143dc362d') in 0.075406 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Models/Moon/Material _50_normal.jpg
-  artifactKey: Guid(ad49f49ea8a23b847b80c61700b4d24d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Moon/Material _50_normal.jpg using Guid(ad49f49ea8a23b847b80c61700b4d24d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44e898c9c6de9f8d165c0f93d5ef95f5') in 0.036145 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000101 seconds.
-  path: Assets/Models/Moon/Material _50_roughness.jpg
-  artifactKey: Guid(c7c25daa883f4f24f93bc2e24af3f8d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Moon/Material _50_roughness.jpg using Guid(c7c25daa883f4f24f93bc2e24af3f8d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29d1d761d8807c95aed2db582d10f811') in 0.017251 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.566140 seconds.
-  path: Assets/Models/Rocks/Rock1.fbx
-  artifactKey: Guid(e41def1133a5b3743a0499cae6bcd272) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Rocks/Rock1.fbx using Guid(e41def1133a5b3743a0499cae6bcd272) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa8231696fe5f7f333d3bd3e07d8a4e9') in 0.225835 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.900835 seconds.
-  path: Assets/Effects/ExplosionDead.prefab
-  artifactKey: Guid(fdbb3b48492636c40a71a18b7c991e10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Effects/ExplosionDead.prefab using Guid(fdbb3b48492636c40a71a18b7c991e10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f0085bf0befbdbc1b2bd256b9ceb074') in 0.022594 seconds 
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004319 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\AORUS\Desktop\MGD2\Astro-Runner\Astro Runner\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\AORUS\Desktop\MGD2\Astro-Runner\Astro Runner\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 0.54 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.928 seconds
+Domain Reload Profiling:
+	ReloadAssembly (928ms)
+		BeginReloadAssembly (95ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (26ms)
+		EndReloadAssembly (763ms)
+			LoadAssemblies (64ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (227ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (42ms)
+			SetupLoadedEditorAssemblies (385ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (28ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (78ms)
+				ProcessInitializeOnLoadAttributes (205ms)
+				ProcessInitializeOnLoadMethodAttributes (67ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+Shader 'SimpleURPToonLitExample(With Outline)': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Shader 'SimpleURPToonLitExample(With Outline)': fallback shader 'Hidden/Universal Render Pipeline/FallbackError' not found
+Refreshing native plugins compatible for Editor in 1.56 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4526 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 24 unused Assets / (0.5 MB). Loaded Objects now: 5204.
+Memory consumption went from 249.1 MB to 248.6 MB.
+Total: 2.758800 ms (FindLiveObjects: 0.279800 ms CreateObjectMapping: 0.164900 ms MarkObjects: 2.184600 ms  DeleteObjects: 0.128500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 

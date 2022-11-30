@@ -11,6 +11,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] GameObject ExplosionParticle;
     [SerializeField] GameObject SlimeParticle;
     [SerializeField] Score score_script;
+    [SerializeField] LeftButton left;
+    [SerializeField] RightButton right;
 
     [Header("Panels")]
     [SerializeField] GameObject LosePanel;
@@ -25,6 +27,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float speedOverTime;
     [SerializeField] float RespawnDelay = 0.2f;
     [SerializeField] float Alien_Score = 50f;
+    [SerializeField] float moveDistance;
+    public bool isCollided;
 
     [Header("Audio")]
     [SerializeField] AudioSource source;
@@ -33,14 +37,7 @@ public class PlayerController : MonoBehaviour
 
     private Rigidbody rb;
     private Animator animator;
-
     private float x, y, z;
-
-    [SerializeField] float moveDistance;
-
-    public bool isCollided;
-    [SerializeField] LeftButton left;
-    [SerializeField] RightButton right;
 
     void Start()
     {
