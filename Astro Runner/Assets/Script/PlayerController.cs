@@ -36,10 +36,7 @@ public class PlayerController : MonoBehaviour
 
     private float x, y, z;
 
-    [Tooltip("How long until next move when pressed")]
-    [SerializeField] float movetime = 0.5f;
-    private float current_time;
-
+    [SerializeField] float moveDistance;
 
     public bool isCollided;
     [SerializeField] LeftButton left;
@@ -57,7 +54,7 @@ public class PlayerController : MonoBehaviour
     {
         if(transform.position.z > -1.19f)
         {
-            transform.position -= new Vector3(0f, 0f, 0.6f);
+            transform.position -= new Vector3(0f, 0f, moveDistance); //0.6f
         }
     }
 
@@ -65,7 +62,7 @@ public class PlayerController : MonoBehaviour
     {
         if(transform.position.z < 1.19f)
         {
-            transform.position += new Vector3(0f, 0f, 0.6f);
+            transform.position += new Vector3(0f, 0f, moveDistance);
         }
     }
 
@@ -83,29 +80,12 @@ public class PlayerController : MonoBehaviour
 
         if(left.isPressedLeft == true)
         {
-            current_time += Time.deltaTime;
-            if (current_time > movetime)
-            {
-                MoveLeft();
-                current_time = 0.0f;
-            }
+            MoveLeft();
         }
-
         else if(right.isPressedRight == true)
         {
-            current_time += Time.deltaTime;
-            if (current_time > movetime)
-            {
-                MoveRight();
-                current_time = 0.0f;
-            }
+            MoveRight();
         }
-        else
-        {
-            current_time = 0.0f;
-        }
-
-        Debug.Log(current_time);
     }
 
     public void ResetLevel()
