@@ -7,6 +7,7 @@ using UnityEngine;
 public class Platform_Move : MonoBehaviour
 {
     [SerializeField] private float PlatformMoveSpeed;
+    public Vector3 stopp;
 
     private GameObject Character;
     private PlayerController playerController;

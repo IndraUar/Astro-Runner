@@ -6,13 +6,21 @@ public class Platform_Spawn : MonoBehaviour
 {
     [SerializeField] GameObject PrefabPlatform;
     [SerializeField] Transform SpawnPoint;
+    [SerializeField] float spawntime;
 
-    private void OnTriggerEnter(Collider other)
+    private float currentTime;
+    private void FixedUpdate()
     {
-        if (other.CompareTag("Platform"))
+        if(currentTime >= spawntime)
         {
-            var platform = Instantiate(PrefabPlatform, SpawnPoint.transform.position, Quaternion.identity);
-            platform.tag = "Platform";
+            Invoke("SpawnPlatform", 0);
+            currentTime = 0;
         }
+        currentTime += Time.deltaTime;
+    }
+    void SpawnPlatform()
+    {
+        var platform = Instantiate(PrefabPlatform, SpawnPoint.transform.position, Quaternion.identity);
+        platform.tag = "Platform";
     }
 }
