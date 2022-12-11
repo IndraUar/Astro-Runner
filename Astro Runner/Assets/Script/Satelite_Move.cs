@@ -7,25 +7,25 @@ using UnityEngine;
 public class Satelite_Move : MonoBehaviour
 {
     [SerializeField] private float ObstacleMoveSpeed;
-    public float speedOverTime;
+    [SerializeField] Obstacle_Spawn Obstacle_Spawn;
 
-    private GameObject Character;
     private PlayerController playerController;
+    private GameObject Character;
+
     private void Start()
     {
         Character = GameObject.Find("Player");
         playerController = Character.GetComponent<PlayerController>();
+        Obstacle_Spawn = FindObjectOfType<Obstacle_Spawn>();
     }
 
     void Update()
     {
-        speedOverTime += 0.2f * Time.deltaTime;
 
-        this.transform.position = this.transform.position + new Vector3((ObstacleMoveSpeed + speedOverTime) * Time.deltaTime, 0, 0);
+        this.transform.position = this.transform.position + new Vector3((ObstacleMoveSpeed + Obstacle_Spawn.speedOverTime) * Time.deltaTime, 0, 0);
         if (playerController.isCollided == true)
         {
             ObstacleMoveSpeed = 0.0f;
-            speedOverTime = 0.0f;
         }
     }
 

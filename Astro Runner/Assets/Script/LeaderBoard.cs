@@ -23,7 +23,6 @@ public class LeaderBoard : MonoBehaviour
 
     private int[] Array_Score;
 
-    // Start is called before the first frame update
     void Start()
     {
         Score_1 = PlayerPrefs.GetInt("score1", 0);
@@ -64,7 +63,7 @@ public class LeaderBoard : MonoBehaviour
 
     public void RecoredScore()
     {
-        current_score = (int)score_script.RecordScore;
+        current_score = (int)score_script.CurrentScore;
         Array_Score[5] = current_score;
         SortScore();
         SaveScore();
@@ -76,14 +75,7 @@ public class LeaderBoard : MonoBehaviour
         for(int i = 0;i<5;i++)
         {
             PlayerPrefs.SetInt("score" + (i + 1), Array_Score[i]);
-            Debug.Log("score" + (i + 1));
+            //Debug.Log("score" + (i + 1));
         }
-        Debug.Log(Array_Score[0]);
-        Debug.Log(Array_Score[5]);
-        //PlayerPrefs.SetInt("score1", Score_1);
-        //PlayerPrefs.SetInt("score2", Score_2);
-        //PlayerPrefs.SetInt("score3", Score_3);
-        //PlayerPrefs.SetInt("score4", Score_4);
-        //PlayerPrefs.SetInt("score5", Score_5);
     }
 }

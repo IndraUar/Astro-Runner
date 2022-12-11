@@ -118,6 +118,7 @@ public class PlayerController : MonoBehaviour
      
             animator.SetBool("IsDead", true);
 
+
             Invoke(nameof(SetTimeScale), 0.6f);
             Invoke(nameof(EnableLosePanel), 0.5f);
         }
@@ -126,7 +127,7 @@ public class PlayerController : MonoBehaviour
         {
             source.PlayOneShot(CoinClip, 1f);
             Instantiate(SlimeParticle, transform.position, Quaternion.identity);
-            score_script.RecordScore += Alien_Score;
+            score_script.CurrentScore += Alien_Score;
             Destroy(collision.gameObject);
         }
     }

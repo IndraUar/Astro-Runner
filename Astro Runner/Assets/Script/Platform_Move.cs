@@ -17,6 +17,7 @@ public class Platform_Move : MonoBehaviour
         Character = GameObject.Find("Player");
         playerController = Character.GetComponent<PlayerController>();
     }
+
     void Update()
     {
         if (playerController.isCollided == true)

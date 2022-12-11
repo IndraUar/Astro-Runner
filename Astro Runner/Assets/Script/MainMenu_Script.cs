@@ -71,7 +71,6 @@ public class MainMenu_Script : MonoBehaviour
         SceneManager.LoadScene("MainMenu");
     }
 
-    // this are all game modes.. just making 1 for now
     public void LoadNoob()
     {
         Time.timeScale = 1.0f;

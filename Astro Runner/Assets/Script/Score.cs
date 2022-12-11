@@ -10,21 +10,19 @@ public class Score : MonoBehaviour
     [SerializeField] TextMeshProUGUI Text_Score;
     [SerializeField] TextMeshProUGUI Text_FinalScore;
 
-    public float RecordScore;
+    public float CurrentScore;
 
     void Start()
     {
-        RecordScore = 0;
-    }
-
-    void FixedUpdate()
-    {
-        RecordScore += Time.deltaTime;
-        Text_Score.text = RecordScore.ToString("0");
+        CurrentScore = 0;
     }
 
     void Update()
     {
-        Text_FinalScore.text = RecordScore.ToString("0");
+
+        CurrentScore += Time.deltaTime;
+        Text_Score.text = CurrentScore.ToString("0");
+        Text_FinalScore.text = CurrentScore.ToString("0");
     }
 }
+

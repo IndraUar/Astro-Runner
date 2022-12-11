@@ -4,6 +4,7 @@ ScriptsOnlyBuild:
     - Alien_Move
     - Alien_Spawn
     - AudioManager
+    - LeaderBoard
     - LeftButton
     - MainMenu_Script
     - Menu
@@ -195,22 +196,22 @@ ScriptsOnlyBuild:
     methodName: ResetDebugManager
   - assembly: Assembly-CSharp
     fullTypeName: Menu
-    methodName: ScoreBoard
-  - assembly: Assembly-CSharp
-    fullTypeName: Menu
     methodName: Pause
+  - assembly: Assembly-CSharp
+    fullTypeName: LeaderBoard
+    methodName: RecoredScore
   - assembly: Assembly-CSharp
     fullTypeName: MainMenu_Script
     methodName: LoadNoob
   - assembly: Assembly-CSharp
-    fullTypeName: MainMenu_Script
-    methodName: ToMainMenu
+    fullTypeName: LeaderBoard
+    methodName: RecoredScore
   - assembly: Assembly-CSharp
     fullTypeName: MainMenu_Script
     methodName: ToMainMenu
   - assembly: Assembly-CSharp
-    fullTypeName: Menu
-    methodName: CloseButton
+    fullTypeName: MainMenu_Script
+    methodName: ToMainMenu
   - assembly: Assembly-CSharp
     fullTypeName: Menu
     methodName: CloseButton
@@ -224,20 +225,17 @@ ScriptsOnlyBuild:
     fullTypeName: Menu
     methodName: CloseButton
   - assembly: Assembly-CSharp
-    fullTypeName: Menu
-    methodName: CloseButton
-  - assembly: Assembly-CSharp
     fullTypeName: PlayerController
     methodName: MoveLeft
-  - assembly: Assembly-CSharp
-    fullTypeName: Menu
-    methodName: ScoreBoard
   - assembly: Assembly-CSharp
     fullTypeName: Menu
     methodName: Pause
   - assembly: Assembly-CSharp
     fullTypeName: MainMenu_Script
     methodName: ToMainMenu
+  - assembly: Assembly-CSharp
+    fullTypeName: LeaderBoard
+    methodName: RecoredScore
   - assembly: Assembly-CSharp
     fullTypeName: MainMenu_Script
     methodName: ToMainMenu
@@ -248,8 +246,8 @@ ScriptsOnlyBuild:
     fullTypeName: MainMenu_Script
     methodName: LoadNormal
   - assembly: Assembly-CSharp
-    fullTypeName: Menu
-    methodName: CloseButton
+    fullTypeName: LeaderBoard
+    methodName: RecoredScore
   - assembly: Assembly-CSharp
     fullTypeName: PlayerController
     methodName: MoveLeft
@@ -257,8 +255,14 @@ ScriptsOnlyBuild:
     fullTypeName: MainMenu_Script
     methodName: ToMainMenu
   - assembly: Assembly-CSharp
+    fullTypeName: LeaderBoard
+    methodName: RecoredScore
+  - assembly: Assembly-CSharp
     fullTypeName: MainMenu_Script
     methodName: LoadPro
+  - assembly: Assembly-CSharp
+    fullTypeName: LeaderBoard
+    methodName: RecoredScore
   - assembly: Assembly-CSharp
     fullTypeName: Menu
     methodName: Pause
@@ -268,9 +272,6 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: MainMenu_Script
     methodName: ToMainMenu
-  - assembly: Assembly-CSharp
-    fullTypeName: Menu
-    methodName: ScoreBoard
   - assembly: Assembly-CSharp
     fullTypeName: Menu
     methodName: CloseButton
@@ -368,6 +369,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 9294}
     - Class: 114
       Script: {instanceID: 9838}
+    - Class: 114
+      Script: {instanceID: 10684}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -424,8 +427,6 @@ ScriptsOnlyBuild:
     - Class: 82
       Script: {instanceID: 0}
     - Class: 83
-      Script: {instanceID: 0}
-    - Class: 89
       Script: {instanceID: 0}
     - Class: 91
       Script: {instanceID: 0}
@@ -491,6 +492,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 9188}
     - Class: 114
       Script: {instanceID: 9838}
+    - Class: 114
+      Script: {instanceID: 10684}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -614,6 +617,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 9294}
     - Class: 114
       Script: {instanceID: 9838}
+    - Class: 114
+      Script: {instanceID: 10684}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -673,6 +678,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 83
       Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
     - Class: 91
       Script: {instanceID: 0}
     - Class: 95
@@ -705,6 +712,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 2908}
     - Class: 114
       Script: {instanceID: 3194}
+    - Class: 114
+      Script: {instanceID: 3318}
     - Class: 114
       Script: {instanceID: 3806}
     - Class: 114
@@ -787,6 +796,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 10094}
     - Class: 114
       Script: {instanceID: 10448}
+    - Class: 114
+      Script: {instanceID: 10684}
+    - Class: 114
+      Script: {instanceID: 165112}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -934,7 +947,7 @@ ScriptsOnlyBuild:
     className: UnityOnCollisionStayMessageListener
   - hash:
       serializedVersion: 2
-      Hash: ea458332000d579bae08c49e7edc2ba0
+      Hash: 52b18f60f98c6bdb0dfe5f2845764f44
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Satelite_Move
@@ -1108,7 +1121,7 @@ ScriptsOnlyBuild:
     className: TMP_TextSelector_A
   - hash:
       serializedVersion: 2
-      Hash: d1cdfb55202eea4dc0dce1e89af6d93c
+      Hash: b4c9928ea56a70c5823d3cdb3feaa5e6
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Score
@@ -1558,7 +1571,7 @@ ScriptsOnlyBuild:
     className: DebugUIHandlerEnumHistory
   - hash:
       serializedVersion: 2
-      Hash: f959c68c7f4dda4505cf38e2ac0357ef
+      Hash: 65eee6e1b61db6e642d4592ba2defe21
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Obstacle_Spawn
@@ -2224,7 +2237,7 @@ ScriptsOnlyBuild:
     className: UnityOnSubmitMessageListener
   - hash:
       serializedVersion: 2
-      Hash: ea458332000d579bae08c49e7edc2ba0
+      Hash: 52b18f60f98c6bdb0dfe5f2845764f44
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Obstacle_Move
@@ -2444,4 +2457,5 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Level_Noob.unity
   - Assets/Scenes/Level_Normal.unity
   - Assets/Scenes/Level_Pro.unity
-  playerPath: C:/Users/AORUS/Desktop/Astro Test V4.apk
+  playerPath: C:/Users/cocha/Desktop/Y2S3/MGD2/Astro Runner/Astro Runner/Build/AstroRunner
+    V5.5 Final.apk

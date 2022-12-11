@@ -6,19 +6,19 @@ using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
-    public static AudioManager instance; // Creates a static varible for a MusicControlScript instance
+    public static AudioManager instance; 
 
-    private void Awake() // Runs before void Start()
+    private void Awake() 
     {
-        DontDestroyOnLoad(this.gameObject); // Don't destroy this gameObject when loading different scenes
+        DontDestroyOnLoad(this.gameObject); 
 
-        if (instance == null) // If the MusicControlScript instance variable is null
+        if (instance == null) 
         {
-            instance = this; // Set this object as the instance
+            instance = this; 
         }
-        else // If there is already a MusicControlScript instance active
+        else 
         {
-            Destroy(gameObject); // Destroy this gameObject
+            Destroy(gameObject); 
         }
     }
 }
